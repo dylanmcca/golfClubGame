@@ -11,10 +11,10 @@ h1 {
     font-size: 40px;
     color: yellow;
 }
-
+/*distance box to display random distance to green */
 #distance {
     border: solid;
-    padding: 3rem;
+    padding: 2rem;
     color: yellow;
 }
 
