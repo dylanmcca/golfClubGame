@@ -11,3 +11,9 @@ h1 {
     font-size: 40px;
     color: yellow;
 }
+
+#distance {
+    border: solid;
+    padding: 2rem;
+    color: yellow;
+}
