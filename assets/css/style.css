@@ -5,3 +5,8 @@ body {
 h1 {
     color:yellow;
 }
+
+.distance-area {
+    font-size: 40px;
+    color: yellow;
+}
