@@ -24,8 +24,11 @@ h1 {
     color: yellow;
 }
 
-#driver {
-    height: 20px;
-    width: 20px;
+.clubs img {
+    width: 400px;
+    height: auto;
 }
 
+#driver:hover {
+    border: 8px solid yellow;
+}
