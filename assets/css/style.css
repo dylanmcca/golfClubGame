@@ -25,10 +25,15 @@ h1 {
 }
 
 .clubs img {
-    width: 400px;
+    width: 300px;
     height: auto;
 }
 
 #driver:hover {
     border: 8px solid yellow;
+}
+
+.score {
+    font-size: 40px;
+    color: yellow;
 }
