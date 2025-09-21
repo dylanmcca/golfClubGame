@@ -25,7 +25,8 @@ function randInt(min,max) {
 const clubs = [
     {name: "Driver", distance: 230, img: "assets/images/driver2-istock.jpg"},
     {name: "3-wood", distance: 210, img: "assets/images/3-wood-istock.jpg"},
-    {name: "5-iron", distance: 160, img: "assets/images/5iron-istock.jpg"},
+    {name: "5-wood", distance: 190, img: "assets/images/5-wood-istock.jpg"},
+    {name: "5-iron", distance: 165, img: "assets/images/5iron-istock.jpg"},
     {name: "7-iron", distance: 145, img: "assets/images/7iron-istock.jpg"},
     {name: "9-iron", distance: 120, img: "assets/images/9iron-istock.jpg"},
     {name: "Pitch", distance: 90, img: "assets/images/pitching-wedge-istock.jpg"},
