@@ -24,13 +24,16 @@ h1 {
     color: yellow;
 }
 
-.clubs img {
-    width: 300px;
-    height: auto;
+.clubs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
 }
 
-#driver:hover {
+.clubs img:hover {
     border: 8px solid yellow;
+    transform: scale (1.05);
 }
 
 .score {
