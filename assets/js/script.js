@@ -35,7 +35,10 @@ let attempts = 0;
 const maxAttempts = 5;
 let targetDistance = 0;
 
-
+//add elements to get by id to run game
+const distanceEl = document.getElementById("distance");
+const correctEl =document.getElementById("correct-count");
+const incorrectEl = document.getElementById("incorrect-count");
 const clubsContainer = document.getElementById("clubs-container");
 
 function showClubs() 

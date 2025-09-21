@@ -31,12 +31,12 @@ h1 {
     gap: 20px;
     margin-top: 20px;
 }
-
+/*add hover effect when mouse moves over club image*/
 .clubs img:hover {
     border: 8px solid yellow;
     transform: scale (1.05);
 }
-
+/*make club images same size*/
 .clubs img {
     width: 200px;
     height: auto;
