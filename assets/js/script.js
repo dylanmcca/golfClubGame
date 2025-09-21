@@ -15,7 +15,15 @@ function randInt(min,max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 const clubs = [
-    {name: "Driver", distance: 230, img: "assets/images/driver2-istock.jpg"}
+    {name: "Driver", distance: 230, img: "assets/images/driver2-istock.jpg"},
+    {name: "3-wood", distance: 190, img: "assets/images/3-wood-istock.jpg"},
+    {name: "5-iron", distance: 160, img: "assets/images/5iron-istock.jpg"},
+    {name: "7-iron", distance: 140, img: "assets/images/7iron-istock.jpg"},
+    {name: "9-iron", distance: 120, img: "assets/images/9iron-istock.jpg"},
+    {name: "Pitch", distance: 100, img: "assets/images/pitch-wedge-istock.jpg"},
+    {name: "Sand wedge", distance: 70, img: "assets/images/sandwedge-istock.jpg"},
+    {name: "Putter", distance: 15, img: "assets/images/putter-istock.jpg"},
+
 ];
 
 const clubsContainer = document.getElementById("clubs-container");
