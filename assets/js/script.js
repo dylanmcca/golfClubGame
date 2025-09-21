@@ -76,14 +76,6 @@ function checkChoice(club) {
 //end game function runs after max attempts
 function endGame() {
     alert(`Game over! You had ${correctCount} correct club selections vs ${incorrectCount} incorrect.`);
-
-    clubsContainer.innerHTML = `
-    <div id="end-message">
-    Thanks for Playing! <br>
-    Correct choices ${correctCount} <br>
-    Incorrect choices ${incorrectCount}
-    </div>
-    `;
 }
 
 function showClubs() 
