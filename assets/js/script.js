@@ -12,7 +12,7 @@ function runGame() {
 
 /* making distance a global variable for easier management & club distance comparisons*/ 
 function runGame() {
-    targetDistance = randInt(1, 300);
+    targetDistance = randInt(1, 250);
     distanceEl.textContent = targetDistance + " meters";
 }
 
@@ -23,14 +23,14 @@ function randInt(min,max) {
 
 //array for selection of golf clubs
 const clubs = [
-    {name: "Driver", distance: 290, img: "assets/images/driver2-istock.jpg"},
-    {name: "3-wood", distance: 190, img: "assets/images/3-wood-istock.jpg"},
+    {name: "Driver", distance: 230, img: "assets/images/driver2-istock.jpg"},
+    {name: "3-wood", distance: 210, img: "assets/images/3-wood-istock.jpg"},
     {name: "5-iron", distance: 160, img: "assets/images/5iron-istock.jpg"},
-    {name: "7-iron", distance: 140, img: "assets/images/7iron-istock.jpg"},
+    {name: "7-iron", distance: 145, img: "assets/images/7iron-istock.jpg"},
     {name: "9-iron", distance: 120, img: "assets/images/9iron-istock.jpg"},
-    {name: "Pitch", distance: 100, img: "assets/images/pitching-wedge-istock.jpg"},
-    {name: "Sand wedge", distance: 70, img: "assets/images/sandwedge-istock.jpg"},
-    {name: "Putter", distance: 15, img: "assets/images/putter-istock.jpg"},
+    {name: "Pitch", distance: 90, img: "assets/images/pitching-wedge-istock.jpg"},
+    {name: "Sand wedge", distance: 60, img: "assets/images/sandwedge-istock.jpg"},
+    {name: "Putter", distance: 20, img: "assets/images/putter-istock.jpg"},
 
 ];
 
@@ -66,7 +66,7 @@ function checkChoice(club) {
 
     const difference = Math.abs(club.distance - targetDistance);
 
-    if (difference <= 15) {
+    if (difference <= 25) {
         alert(`👍 Good choice! Your ${club.name} landed close to the green (${club.distance}m vs ${targetDistance}m).`);
         correctCount++;
     } else if (club.distance < targetDistance) {
