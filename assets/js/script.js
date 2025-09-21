@@ -34,6 +34,18 @@ const clubs = [
 
 ];
 
+function showClubs() 
+{
+    clubs.forEach(club => 
+        {
+    const btn = document.createElement("button");
+    btn.innerHTML = `<img src="${club.img}" alt="${club.name}">
+    <span>${club.name}</span>`;
+    btn.addEventListener("click", () => checkChoice(club));
+    clubsContainer.appendChild(btn);
+    });
+}
+
 //add game variables 
 let correctCount = 0;
 let incorrectCount = 0;
@@ -46,6 +58,7 @@ const distanceEl = document.getElementById("distance");
 const correctEl =document.getElementById("correct-count");
 const incorrectEl = document.getElementById("incorrect-count");
 const clubsContainer = document.getElementById("clubs-container");
+const restartBtn = document.getElementById("restart");
 
 // club selection vs distance if statements & counters against game max attempts
 function checkChoice(club) {
@@ -78,14 +91,17 @@ function endGame() {
     alert(`Game over! You had ${correctCount} correct club selections vs ${incorrectCount} incorrect.`);
 }
 
-function showClubs() 
-{
-    clubs.forEach(club => 
-        {
-    const btn = document.createElement("button");
-    btn.innerHTML = `<img src="${club.img}" alt="${club.name}">
-    <span>${club.name}</span>`;
-    btn.addEventListener("click", () => checkChoice(club));
-    clubsContainer.appendChild(btn);
-    });
+// restart game function linked to restart button
+function restartGame() {
+    correctCount = 0;
+    incorrectCount = 0;
+    attempts = 0;
+    correctEl.textContent = correctCount;
+    incorrectEl.textContent = incorrectCount;
+
+    clubsContainer.innerHTML = "";
+    showClubs();
+    runGame();
 }
+
+restartBtn.addEventListener("click", restartGame);
