@@ -6,13 +6,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 /* create and show a random distance for game
 function runGame() {
-    const distance = randInt(1, 500);
+    const distance = randInt(1, 300);
     document.getElementById("distance").textContent = distance + " meters";
 }*/
 
 /* making distance a global variable for easier management & club distance comparisons*/ 
 function runGame() {
-    targetDistance = randInt(1, 500);
+    targetDistance = randInt(1, 300);
     distanceEl.textContent = targetDistance + " meters";
 }
 
@@ -23,7 +23,7 @@ function randInt(min,max) {
 
 //array for selection of golf clubs
 const clubs = [
-    {name: "Driver", distance: 230, img: "assets/images/driver2-istock.jpg"},
+    {name: "Driver", distance: 290, img: "assets/images/driver2-istock.jpg"},
     {name: "3-wood", distance: 190, img: "assets/images/3-wood-istock.jpg"},
     {name: "5-iron", distance: 160, img: "assets/images/5iron-istock.jpg"},
     {name: "7-iron", distance: 140, img: "assets/images/7iron-istock.jpg"},
@@ -76,7 +76,7 @@ function checkChoice(club) {
 //end game function runs after max attempts
 function endGame() {
     alert(`Game over! You had ${correctCount} correct club selections vs ${incorrectCount} incorrect.`);
-    
+
 }
 
 function showClubs() 
