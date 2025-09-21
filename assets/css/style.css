@@ -56,4 +56,12 @@ h1 {
     color: yellow;
 }
 
-/*add styling to end-message*/
+/*add styling to restart button*/
+#restart {
+    color: green;
+    background-color: yellow;
+    font-size: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+}
