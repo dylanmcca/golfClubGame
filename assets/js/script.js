@@ -47,6 +47,7 @@ const correctEl =document.getElementById("correct-count");
 const incorrectEl = document.getElementById("incorrect-count");
 const clubsContainer = document.getElementById("clubs-container");
 
+// club selection vs distance if statements & counters against game max attempts
 function checkChoice(club) {
     attempts++;
 
@@ -70,6 +71,12 @@ function checkChoice(club) {
  } else {
     endGame();
  }
+}
+
+//end game function runs after max attempts
+function endGame() {
+    alert(`Game over! You had ${correctCount} correct club selections vs ${incorrectCount} incorrect.`);
+    
 }
 
 function showClubs() 
