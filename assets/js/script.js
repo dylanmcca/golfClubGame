@@ -20,11 +20,19 @@ const clubs = [
     {name: "5-iron", distance: 160, img: "assets/images/5iron-istock.jpg"},
     {name: "7-iron", distance: 140, img: "assets/images/7iron-istock.jpg"},
     {name: "9-iron", distance: 120, img: "assets/images/9iron-istock.jpg"},
-    {name: "Pitch", distance: 100, img: "assets/images/pitch-wedge-istock.jpg"},
+    {name: "Pitch", distance: 100, img: "assets/images/pitching-wedge-istock.jpg"},
     {name: "Sand wedge", distance: 70, img: "assets/images/sandwedge-istock.jpg"},
     {name: "Putter", distance: 15, img: "assets/images/putter-istock.jpg"},
 
 ];
+
+//add game variables 
+let correctCount = 0;
+let incorrectCount = 0;
+let attempts = 0;
+const maxAttempts = 5;
+let targetDistance = 0;
+
 
 const clubsContainer = document.getElementById("clubs-container");
 
