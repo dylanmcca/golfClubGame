@@ -43,6 +43,12 @@ h1 {
     transition: transform 0.2s, border 0.2s;
 }
 
+.clubs span {
+    display: block;
+    margin-top: 10px;
+    font-size: 24px;
+    color: green;
+    }
 
 .score {
     font-size: 40px;
