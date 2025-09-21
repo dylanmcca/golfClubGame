@@ -14,6 +14,8 @@ function runGame() {
 function randInt(min,max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+//array for selection of golf clubs
 const clubs = [
     {name: "Driver", distance: 230, img: "assets/images/driver2-istock.jpg"},
     {name: "3-wood", distance: 190, img: "assets/images/3-wood-istock.jpg"},

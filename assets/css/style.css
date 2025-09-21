@@ -1,6 +1,7 @@
 body {
     background-color: green;
     padding-left: 2em;
+    color: yellow;
 }
 
 h1 {
@@ -35,6 +36,13 @@ h1 {
     border: 8px solid yellow;
     transform: scale (1.05);
 }
+
+.clubs img {
+    width: 200px;
+    height: auto;
+    transition: transform 0.2s, border 0.2s;
+}
+
 
 .score {
     font-size: 40px;
