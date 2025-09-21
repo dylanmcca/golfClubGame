@@ -15,3 +15,13 @@ function randInt(min,max) {
 const clubs = [
     {name: "Driver", distance: 230, img: "assets/images/driver.jpg"}
     ];
+
+function showClubs() {
+    clubs.forEach(club => {
+        const btn = document.createElement("button");
+        btn.innerHTML = `<img src="${club.img}" alt="${club.name}">
+        <span>${club.name}</span>`;
+    btn.addEventListener("click", () => checkChoice(club));
+    clubsContainer.appendChild(btn);
+    });
+}
