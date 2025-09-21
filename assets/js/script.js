@@ -47,21 +47,29 @@ const correctEl =document.getElementById("correct-count");
 const incorrectEl = document.getElementById("incorrect-count");
 const clubsContainer = document.getElementById("clubs-container");
 
-function checkClubChoice(club) {
+function checkChoice(club) {
     attempts++;
 
     const difference = Math.abs(club.distance - targetDistance);
 
     if (difference <= 15) {
-        alert(`👍 Good choice! you ${club.name} landed close to the green (${club.distance}m vs ${targetDistance}m).`);
+        alert(`👍 Good choice! Your ${club.name} landed close to the green (${club.distance}m vs ${targetDistance}m).`);
         correctCount++;
-    } else if (club.distance < targetDistance {
+    } else if (club.distance < targetDistance) {
         alert(`👎 You're short! Your ${club.name} goes ${club.distance}m, but the green is ${targetDistance}m away.`);
         incorrectCount++;
     } else {
         alert(`🤦‍♂️ You're too long! Your ${club.name} goes ${club.distance}m, but the green is only ${targetDistance}m away.`);
         incorrectCount++;
     }
+ correctEl.textContent = correctCount;
+ incorrectEl.textContent = incorrectCount;
+ 
+ if (attempts < maxAttempts) {
+    runGame();
+ } else {
+    endGame();
+ }
 }
 
 function showClubs() 
