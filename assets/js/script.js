@@ -15,7 +15,7 @@ function randInt(min,max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 const clubs = [
-    {name: "Driver", distance: 230, img: "assets/images/driver-istock.jpg"}
+    {name: "Driver", distance: 230, img: "assets/images/driver2-istock.jpg"}
 ];
 
 const clubsContainer = document.getElementById("clubs-container");
