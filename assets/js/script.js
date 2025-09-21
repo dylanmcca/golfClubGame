@@ -41,11 +41,28 @@ let attempts = 0;
 const maxAttempts = 5;
 let targetDistance = 0;
 
-//add elements to get by id to run game
+//add variables to get elements by id to run game
 const distanceEl = document.getElementById("distance");
 const correctEl =document.getElementById("correct-count");
 const incorrectEl = document.getElementById("incorrect-count");
 const clubsContainer = document.getElementById("clubs-container");
+
+function checkClubChoice(club) {
+    attempts++;
+
+    const difference = Math.abs(club.distance - targetDistance);
+
+    if (difference <= 15) {
+        alert(`👍 Good choice! you ${club.name} landed close to the green (${club.distance}m vs ${targetDistance}m).`);
+        correctCount++;
+    } else if (club.distance < targetDistance {
+        alert(`👎 You're short! Your ${club.name} goes ${club.distance}m, but the green is ${targetDistance}m away.`);
+        incorrectCount++;
+    } else {
+        alert(`🤦‍♂️ You're too long! Your ${club.name} goes ${club.distance}m, but the green is only ${targetDistance}m away.`);
+        incorrectCount++;
+    }
+}
 
 function showClubs() 
 {
