@@ -15,7 +15,7 @@ h1 {
 /*distance box to display random distance to green */
 #distance {
     border: solid;
-    padding: 2rem;
+    padding: 1rem;
     color: yellow;
 }
 
