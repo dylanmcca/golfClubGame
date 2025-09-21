@@ -4,10 +4,16 @@ document.addEventListener("DOMContentLoaded", function() {
     showClubs();
 });
 
-/* create and show a random distance for game*/
+/* create and show a random distance for game
 function runGame() {
     const distance = randInt(1, 500);
     document.getElementById("distance").textContent = distance + " meters";
+}*/
+
+/* making distance a global variable for easier management & club distance comparisons*/ 
+function runGame() {
+    targetDistance = randInt(1, 500);
+    distanceEl.textContent = targetDistance + " meters";
 }
 
 // generate randon distance using Math Random & Math floor methods
