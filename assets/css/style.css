@@ -2,7 +2,6 @@ body {
     background-color: green;
     padding-left: 2em;
     color: yellow;
-    font: arial;
 }
 
 h1 {
@@ -35,7 +34,7 @@ h1 {
 /*add hover effect when mouse moves over club image*/
 .clubs img:hover {
     border: 8px solid yellow;
-    transform: scale (1.05);
+    transform: scale(1.05);
 }
 /*make club images same size*/
 .clubs img {
