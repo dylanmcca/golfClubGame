@@ -75,7 +75,7 @@ function checkChoice(club) {
         alert(`Correct choice 👍 You chose Driver for a long shot of ${targetDistance}m to the green which is the longest club you have.`);
         correctCount++;
     } else if (club.name === "Sand wedge" && targetDistance < club.distance) {
-        alert(`Correct choice 👍 You chose Sand wedge for a shorter shot of ${targetDistance}m to the green which is the shortest iron club you have.`);
+        alert(`Correct choice 👍 You chose Sand wedge for a shorter shot of ${targetDistance}m to the green which is the shortest iron you have in your bag.`);
         correctCount++;
     } else if (club.distance < targetDistance) {
         alert(`👎 You're short! Your ${club.name} goes ${club.distance}m, but the green is ${targetDistance}m away.`);
