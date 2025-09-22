@@ -32,7 +32,7 @@ const clubs = [
     {name: "9-iron", distance: 110, img: "assets/images/9iron-istock.jpg"},
     {name: "Pitch", distance: 80, img: "assets/images/pitching-wedge-istock.jpg"},
     {name: "Sand wedge", distance: 60, img: "assets/images/sandwedge-istock.jpg"},
-    {name: "Putter", distance: 20, img: "assets/images/putter-istock.jpg"},
+    {name: "Putter", distance: 5, img: "assets/images/putter-istock.jpg"},
 
 ];
 
@@ -77,7 +77,10 @@ function checkChoice(club) {
     } else if (club.name === "Sand wedge" && targetDistance < club.distance) {
         alert(`Correct choice 👍 You chose Sand wedge for a shorter shot of ${targetDistance}m to the green which is the shortest iron you have in your bag.`);
         correctCount++;
-    } else if (club.distance < targetDistance) {
+    } else if (club.name === "Putter" && targetDistance < club.distance) {
+        alert(`Correct choice 👍 You chose Putter for a very short ${targetDistance}m to the green which is a common choice among golfers when just off the green.`);
+        correctCount++;
+    }else if (club.distance < targetDistance) {
         alert(`👎 You're short! Your ${club.name} goes ${club.distance}m, but the green is ${targetDistance}m away.`);
         incorrectCount++;
     } else {
