@@ -67,9 +67,12 @@ function checkChoice(club) {
     attempts++;
 
     const difference = Math.abs(club.distance - targetDistance);
-
+    
     if (difference <= 25) {
         alert(`👍 Good choice! Your ${club.name} landed close to the green (${club.distance}m vs ${targetDistance}m).`);
+        correctCount++;
+    } else if (club.name === "Driver" && targetDistance > club.distance) {
+        alert(`Correct choice 👍 You chose Driver for a long shot of ${targetDistance}m to the green which is the longest club you have.`);
         correctCount++;
     } else if (club.distance < targetDistance) {
         alert(`👎 You're short! Your ${club.name} goes ${club.distance}m, but the green is ${targetDistance}m away.`);
