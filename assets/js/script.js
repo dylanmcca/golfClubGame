@@ -12,7 +12,7 @@ function runGame() {
 
 /* making distance a global variable for easier management & club distance comparisons*/ 
 function runGame() {
-    targetDistance = randInt(1, 250);
+    targetDistance = randInt(1, 450);
     distanceEl.textContent = targetDistance + " meters";
 }
 
