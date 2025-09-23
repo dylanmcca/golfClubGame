@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded", function() {
     showClubs();
 });
 
-/* create and show a random distance for game
+/* initial funtion to create and show a random distance for game
 function runGame() {
     const distance = randInt(1, 300);
     document.getElementById("distance").textContent = distance + " meters";
 }*/
 
-/* making distance a global variable for easier management & club distance comparisons*/ 
+/* changed distance to a global variable (targetDistance) for easier management & club distance comparisons*/ 
 function runGame() {
     targetDistance = randInt(1, 450);
     distanceEl.textContent = targetDistance + " meters";
@@ -36,6 +36,7 @@ const clubs = [
 
 ];
 
+/* this was a difficult function & I used chatGPT to help me work it out from line 42 to 50 */
 function showClubs() 
 {
     clubs.forEach(club => 
@@ -48,7 +49,7 @@ function showClubs()
     });
 }
 
-//add game variables 
+//add additional game variables 
 let correctCount = 0;
 let incorrectCount = 0;
 let attempts = 0;
@@ -114,5 +115,5 @@ function restartGame() {
     showClubs();
     runGame();
 }
-
+/* restart button eventListener */
 restartBtn.addEventListener("click", restartGame);
