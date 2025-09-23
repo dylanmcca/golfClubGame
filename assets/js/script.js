@@ -36,7 +36,7 @@ const clubs = [
 
 ];
 
-/* this was a difficult function & I used chatGPT to help me work it out from line 42 to 50 */
+/* this was a difficult function & I used chatGPT to help me work it out from line 42 to 48 */
 function showClubs() 
 {
     clubs.forEach(club => 
